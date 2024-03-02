@@ -6,18 +6,18 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function Home() {
   let testimony_list = [
     {
-      desc: "Klinik Kecantikan LW memberikan perawatan kulit terbaik. Saya melihat perubahan yang signifikan dan merasa lebih percaya diri.",
-      author: "Sinta",
+      desc: "Saya sangat merekomendasikan Klinik Kecantikan LW kepada siapa pun yang mencari solusi untuk masalah kulit mereka; tim ahli, perawatan berkualitas, dan hasil yang luar biasa telah mengubah penampilan dan kepercayaan diri saya secara signifikan.",
+      author: "Maria",
       occupation: "Mahasiswi",
     },
     {
-      desc: "Klinik Kecantikan LW memberikan perawatan kulit terbaik. Saya melihat perubahan yang signifikan dan merasa lebih percaya diri.",
-      author: "Sinta",
+      desc: "Saya sangat merekomendasikan Klinik Kecantikan LW kepada siapa pun yang mencari solusi untuk masalah kulit mereka; tim ahli, perawatan berkualitas, dan hasil yang luar biasa telah mengubah penampilan dan kepercayaan diri saya secara signifikan.",
+      author: "Maria",
       occupation: "Mahasiswi",
     },
     {
-      desc: "Klinik Kecantikan LW memberikan perawatan kulit terbaik. Saya melihat perubahan yang signifikan dan merasa lebih percaya diri.",
-      author: "Sinta",
+      desc: "Saya sangat merekomendasikan Klinik Kecantikan LW kepada siapa pun yang mencari solusi untuk masalah kulit mereka; tim ahli, perawatan berkualitas, dan hasil yang luar biasa telah mengubah penampilan dan kepercayaan diri saya secara signifikan.",
+      author: "Maria",
       occupation: "Mahasiswi",
     },
   ];
@@ -30,14 +30,13 @@ export default function Home() {
         <div className={styles.action_container}>
           <div className={styles.action_description}>
             <h1 className={styles.action_title}>
-              Berkilau Dengan Kecantikan Sejati di Klinik Kecantikan Lenny
-              Wijaya
+              Dapatkan Penampilan yang Memukau dengan Klinik Kecantikan Lenny
+              Wijaya!
             </h1>
             <p className={styles.action_description}>
-              Sambut keindahan yang tak terbantahkan dengan perawatan eksklusif
-              dari Klinik Kecantikan LW. Temukan solusi kesehatan kulit yang
-              mendalam dan raih kecantikan sejati yang membuat Anda bersinar
-              dari dalam.
+              Jadilah yang terbaik dengan perawatan wajah, rambut, dan tubuh
+              kami yang inovatif. Kunjungi kami sekarang dan rasakan
+              perbedaannya!
             </p>
             <a href="https://api.whatsapp.com/send?phone=6281375199509&text=Halo%20Klinik%20LW%2C%20saya%20mau%20reservasi%20treatmentnya%2C%20bisa%20dibantu?%3F">
               <button className={styles.action_button}>
@@ -70,11 +69,13 @@ export default function Home() {
       </div>
 
       <div className={styles.challenge_container}>
-        <h1>Tantangan Kulit? Kami Punya Jawabannya!</h1>
+        <h1>Peroleh Kecantikan yang Anda Impikan</h1>
         <p>
-          Tingkatkan kepercayaan diri Anda dengan mengatasi berbagai tantangan
-          kulit. Klinik Kecantikan LW hadir untuk menyediakan solusi yang sesuai
-          dengan kebutuhan kulit Anda.
+          Kami memiliki tim ahli yang berpengalaman dalam memberikan perawatan
+          kecantikan terbaik. Dari perawatan wajah yang menyegarkan, perawatan
+          rambut yang mengkilap, hingga perawatan tubuh yang menenangkan, kami
+          menawarkan layanan yang dirancang khusus untuk memenuhi kebutuhan
+          Anda.
         </p>
       </div>
 
@@ -158,10 +159,10 @@ export default function Home() {
           <div className={styles.contact_description}>
             <p>Hubungi Sekarang</p>
             <h1>Mulailah Perjalanan Kecantikan Anda</h1>
-            <p>
-              Jangan tunda kecantikan Anda. Hubungi Klinik Kecantikan LW hari
-              ini untuk konsultasi gratis dan mulailah perjalanan kecantikan
-              yang penuh kepercayaan diri.
+            <p className={styles.call_to_action}>
+              Jangan ragu lagi, reservasikan waktu Anda sekarang di Klinik
+              Kecantikan LW untuk konsultasi gratis dan mulailah perjalanan
+              menuju penampilan yang memukau dan percaya diri.
             </p>
             <a href="https://api.whatsapp.com/send?phone=6281375199509&text=Halo%20Klinik%20LW%2C%20saya%20mau%20reservasi%20treatmentnya%2C%20bisa%20dibantu?%3F">
               <button className={styles.action_button}>

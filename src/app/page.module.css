@@ -8,7 +8,11 @@
   flex-wrap: wrap;
   padding: 20px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.action_container > * {
+  margin: 30px;
 }
 
 .action_title {
@@ -71,6 +75,11 @@
   font-size: 30px;
   line-height: 1.5em;
   margin-bottom: 25px;
+}
+
+.challenge_container p {
+  max-width: 800px;
+  margin: auto;
 }
 
 .challenge_container p {
@@ -219,7 +228,7 @@
 
 .contact_container {
   text-align: center;
-  background-image: url("../../public/close-up-woman.jpeg");
+  background-image: url("../../public/background_girl.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 75% top;
@@ -247,4 +256,10 @@
 
 .contact_container p {
   margin-bottom: 40px;
+}
+
+.contact_container .call_to_action {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 30px;
 }
