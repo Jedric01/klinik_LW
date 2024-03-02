@@ -1,95 +1,176 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import TestimonyBox from "./components/testimony_box";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Home() {
+  let testimony_list = [
+    {
+      desc: "Klinik Kecantikan LW memberikan perawatan kulit terbaik. Saya melihat perubahan yang signifikan dan merasa lebih percaya diri.",
+      author: "Sinta",
+      occupation: "Mahasiswi",
+    },
+    {
+      desc: "Klinik Kecantikan LW memberikan perawatan kulit terbaik. Saya melihat perubahan yang signifikan dan merasa lebih percaya diri.",
+      author: "Sinta",
+      occupation: "Mahasiswi",
+    },
+    {
+      desc: "Klinik Kecantikan LW memberikan perawatan kulit terbaik. Saya melihat perubahan yang signifikan dan merasa lebih percaya diri.",
+      author: "Sinta",
+      occupation: "Mahasiswi",
+    },
+  ];
+
+  let packet_images = ["/packet1.jpeg", "/packet1.jpeg", "/packet1.jpeg"];
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <>
+      <div className={styles.action_outer_container}>
+        <div className={styles.action_container}>
+          <div className={styles.action_description}>
+            <h1 className={styles.action_title}>
+              Berkilau Dengan Kecantikan Sejati di Klinik Kecantikan Lenny
+              Wijaya
+            </h1>
+            <p className={styles.action_description}>
+              Sambut keindahan yang tak terbantahkan dengan perawatan eksklusif
+              dari Klinik Kecantikan LW. Temukan solusi kesehatan kulit yang
+              mendalam dan raih kecantikan sejati yang membuat Anda bersinar
+              dari dalam.
+            </p>
+            <a href="https://api.whatsapp.com/send?phone=6281375199509&text=Halo%20Klinik%20LW%2C%20saya%20mau%20reservasi%20treatmentnya%2C%20bisa%20dibantu?%3F">
+              <button className={styles.action_button}>
+                <FaWhatsapp /> Hubungi Kami
+              </button>
+            </a>
+          </div>
+          <div className={styles.action_image_container}>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+              src="/doctor_potrait.jpeg"
+              alt="Image of Doctor Lenny Wijaya"
+              sizes="100vw"
+              width={0}
+              height={0}
+              style={{ width: "100%", height: "auto" }}
             />
-          </a>
+          </div>
+        </div>
+        <svg
+          className={styles.svg_triangle}
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            className={styles.shape_triangle}
+            d="M0,6V0h1000v100L0,6z"
+          ></path>
+        </svg>
+      </div>
+
+      <div className={styles.challenge_container}>
+        <h1>Tantangan Kulit? Kami Punya Jawabannya!</h1>
+        <p>
+          Tingkatkan kepercayaan diri Anda dengan mengatasi berbagai tantangan
+          kulit. Klinik Kecantikan LW hadir untuk menyediakan solusi yang sesuai
+          dengan kebutuhan kulit Anda.
+        </p>
+      </div>
+
+      <div className={styles.history_container}>
+        <div className={styles.history_description_container}>
+          <p className={styles.clinic_name}>KLINIK KECANTIKAN LENNY WIJAYA</p>
+          <h1>Keindahan yang Dipersonalisasi</h1>
+          <p className={styles.history_description}>
+            Kami bukan hanya klinik kecantikan, tapi penjaga kecantikan pribadi
+            Anda. Klinik Kecantikan LW menawarkan perawatan yang
+            dipersonalisasi, membawa kecantikan Anda ke tingkat yang baru.
+            Klinik kami sudah berdiri sejak tahun 1993.
+          </p>
+          <p className={styles.doctor_name}>Dr.Lenny Wijaya M-Biomed AAAM</p>
+          <p>
+            Tetap stand by di klinik, jangan lewatkan{" "}
+            <strong>GRATIS KONSULTASI DI JAM BERIKUT</strong>:
+          </p>
+          <div className={styles.consultation_times}>
+            <p>Setiap Hari Jam 09:00 - 18:00 WIB</p>
+            <p>Hari Minggu Jam 09:00 - 16:00 WIB</p>
+          </div>
+
+          <div className={styles.years_in_service}>
+            <h1>31+</h1>
+            <p>Tahun Berdiri</p>
+          </div>
+        </div>
+        <div className={styles.clinic_images_container}>
+          <Image
+            src="/gambar_praktek.png"
+            alt="picture of clinic and doctor"
+            sizes="100vw"
+            width={0}
+            height={0}
+            style={{ width: "100%", height: "auto" }}
+          />
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={styles.packet_outer_container}>
+        <p className={styles.packet_title}>PAKET</p>
+        <h1>Paket Perawatan Kecantikan Khusus dari Klinik Kecantikan LW</h1>
+        <p>
+          Pilihlah dari berbagai paket perawatan kecantikan yang dirancang
+          khusus untuk kebutuhan kulit Anda. Dengan paket eksklusif kami,
+          kecantikan sejati Anda menanti untuk diungkap.
+        </p>
+        <div className={styles.packet_inner_container}>
+          {packet_images.map((src) => (
+            <div key={src} className={styles.packet_images}>
+              <Image
+                src={src}
+                alt="picture of packet"
+                width={320}
+                height={267}
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className={styles.testimony_outer_container}>
+        <p className={styles.testimony_title}>Testimoni</p>
+        <h1>Dengarkan Cerita Mereka</h1>
+        <p>Pengalaman Kecantikan Luar Biasa di Klinik Kecantikan LW</p>
+        <div className={styles.testimony_inner_container}>
+          {testimony_list.map((testimony) => (
+            <TestimonyBox
+              description={testimony.desc}
+              author={testimony.author}
+              occupation={testimony.occupation}
+              key={testimony.desc}
+            />
+          ))}
+        </div>
       </div>
-    </main>
+
+      <div className={styles.contact_container}>
+        <div className={styles.contact_color_wrapper}>
+          <div className={styles.contact_description}>
+            <p>Hubungi Sekarang</p>
+            <h1>Mulailah Perjalanan Kecantikan Anda</h1>
+            <p>
+              Jangan tunda kecantikan Anda. Hubungi Klinik Kecantikan LW hari
+              ini untuk konsultasi gratis dan mulailah perjalanan kecantikan
+              yang penuh kepercayaan diri.
+            </p>
+            <a href="https://api.whatsapp.com/send?phone=6281375199509&text=Halo%20Klinik%20LW%2C%20saya%20mau%20reservasi%20treatmentnya%2C%20bisa%20dibantu?%3F">
+              <button className={styles.action_button}>
+                <FaWhatsapp /> Reservasi Sekarang
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }

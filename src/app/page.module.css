@@ -1,230 +1,250 @@
-.main {
+.action_outer_container {
+  background-image: linear-gradient(91deg, #EECCA3 0%, #EF629F 100%);
+  background-color: transparent;
+}
+
+.action_container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  justify-content: space-around;
 }
 
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+.action_title {
+  color: #FFFFFF;
+  font-family: "Playfair Display", sans-serif;
+  line-height: 1.5em;
+  font-size: 30px;
+  font-weight: normal;
 }
 
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
+.action_description {
+  font-family: "Lato", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #242424;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  max-width: 400px;
 }
 
-.description p {
+.action_button {
+  font-family: "Lato", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #EF629F;
+  color: #FFFFFF;
+  padding: 10px 20px 10px 20px;
+  border-radius: 40px 40px 0px 40px;
+}
+
+.action_image_container {
+  flex: 1;
+  max-width: 512px;
+  object-fit: contain;
   position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
+.action_image_container img {
+  border-radius: 50px 0px 50px 0px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: 100%;
-  width: var(--max-width);
+.svg_triangle {
+  position: relative;
+  top: 4px;
 }
 
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
+.shape_triangle {
+  fill: white;
+  transform-origin: center;
+  transform: rotateX(180deg);
 }
 
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
+.challenge_container{
+  text-align: center;
+  padding: 50px;
 }
 
-.card h2 {
+.challenge_container h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 30px;
+  line-height: 1.5em;
+  margin-bottom: 25px;
+}
+
+.challenge_container p {
+  color: #747474;
+  font-family: "Lato", Sans-serif;
+  font-size: 16px;
+  font-weight: 400
+}
+
+.history_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-image: url("../../public/section-shape-medical.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  justify-content: center;
+}
+
+.history_container > * {
+  flex: 1;
+}
+
+.history_description_container {
+  max-width: 500px;
+}
+
+.history_container .clinic_name {
+  color: #EF629F;
+  font-family: "Lato", Sans-serif;
+}
+
+.history_container h1 {
+  font-family: "Playfair Display", Sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.history_description {
+  color: #747474;
+}
+
+.consultation_times {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.years_in_service h1 {
+  color: #EF629F;
+  font-size: 69px;
   font-weight: 600;
-  margin-bottom: 0.7rem;
-}
-
-.card p {
   margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
-  text-wrap: balance;
 }
 
-.center {
+.doctor_name {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.clinic_images_container {
+  flex-basis: 512px;
+  max-width: 512px;
+}
+
+.packet_outer_container {
+  padding: 20px;
+  background-color: #EF629F1A;
+  text-align: center;
+}
+
+.packet_outer_container .packet_title::before {
+  content: "\2014\2014\2014";
+  color: #EF629F;
+}
+
+.packet_outer_container .packet_title {
+  color: #EF629F;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.packet_outer_container .packet_title::after {
+  content: "\2014\2014\2014";
+  color: #EF629F;
+}
+
+.packet_outer_container h1 {
+  margin-bottom: 20px;
+}
+
+.packet_outer_container p {
+  color: #747474;
+}
+
+.packet_inner_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.packet_images {
+  margin: 10px;
+}
+
+.testimony_outer_container {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.testimony_outer_container .testimony_title::before {
+  content: "\2014\2014";
+  color: #EF629F;
+}
+
+.testimony_outer_container .testimony_title::after {
+  content: "\2014\2014";
+  color: #EF629F;
+}
+
+.testimony_outer_container .testimony_title {
+  color: #EF629F;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.testimony_outer_container h1 {
+  margin-bottom: 20px;
+}
+
+.testimony_outer_container > p {
+  color: #747474;
+}
+
+.testimony_inner_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.testimony_inner_container > * {
+  flex: 1
+}
+
+.contact_container {
+  text-align: center;
+  background-image: url("../../public/close-up-woman.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 75% top;
+  height: 667px;
+}
+
+.contact_color_wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(91deg, rgba(238, 204, 163, 0.5) 10%, rgba(239, 98, 159, 0.5) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  padding: 4rem 0;
+  color: white;
 }
 
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
+.contact_description {
+  padding: 20px;
 }
 
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
+.contact_container h1 {
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
-.center::before,
-.center::after {
-  content: "";
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
-}
-
-.logo {
-  position: relative;
-}
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
-  }
-}
-
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
-  }
-
-  .card {
-    padding: 1rem 2.5rem;
-  }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .center {
-    padding: 8rem 0 6rem;
-  }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-  }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
-  }
-
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
-  }
-}
-
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
+.contact_container p {
+  margin-bottom: 40px;
 }

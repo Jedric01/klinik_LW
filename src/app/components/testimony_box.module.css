@@ -1,0 +1,16 @@
+.testimony_box {
+    padding: 40px;
+    background: #EF629F;
+    margin: 20px;
+    color: white;
+    font-family: "Lato", Sans-serif;
+    min-height: 100px;
+    border-radius: 20px;
+}
+
+.testimony_author {
+    font-style: italic;
+    font-family: "Playfair Display", sans-serif;
+    margin-top: 20px;
+}
+
