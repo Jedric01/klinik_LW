@@ -38,7 +38,7 @@ export default function Home() {
               kami yang inovatif. Kunjungi kami sekarang dan rasakan
               perbedaannya!
             </p>
-            <a href="https://api.whatsapp.com/send?phone=6281375199509&text=Halo%20Klinik%20LW%2C%20saya%20mau%20reservasi%20treatmentnya%2C%20bisa%20dibantu?%3F">
+            <a href="https://api.whatsapp.com/send?phone=6282267102757&text=Halo%20Klinik%20LW%2C%20saya%20mau%20reservasi%20treatmentnya%2C%20bisa%20dibantu?%3F">
               <button className={styles.action_button}>
                 <FaWhatsapp /> Hubungi Kami
               </button>
@@ -164,7 +164,7 @@ export default function Home() {
               Kecantikan LW untuk konsultasi gratis dan mulailah perjalanan
               menuju penampilan yang memukau dan percaya diri.
             </p>
-            <a href="https://api.whatsapp.com/send?phone=6281375199509&text=Halo%20Klinik%20LW%2C%20saya%20mau%20reservasi%20treatmentnya%2C%20bisa%20dibantu?%3F">
+            <a href="https://api.whatsapp.com/send?phone=6282267102757&text=Halo%20Klinik%20LW%2C%20saya%20mau%20reservasi%20treatmentnya%2C%20bisa%20dibantu?%3F">
               <button className={styles.action_button}>
                 <FaWhatsapp /> Reservasi Sekarang
               </button>
