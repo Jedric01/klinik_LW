@@ -22,7 +22,11 @@ export default function Home() {
     },
   ];
 
-  let packet_images = ["/packet1.jpeg", "/packet1.jpeg", "/packet1.jpeg"];
+  const fs = require("fs");
+  const dir = "./public/paket";
+  const packet_images = fs
+    .readdirSync(dir)
+    .map((filename: string) => `/paket/${filename}`);
 
   return (
     <>
@@ -125,7 +129,7 @@ export default function Home() {
           kecantikan sejati Anda menanti untuk diungkap.
         </p>
         <div className={styles.packet_inner_container}>
-          {packet_images.map((src) => (
+          {packet_images.map((src: string) => (
             <div key={src} className={styles.packet_images}>
               <Image
                 src={src}
