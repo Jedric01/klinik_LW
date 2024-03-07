@@ -11,13 +11,13 @@ export default function Home() {
       occupation: "Mahasiswi",
     },
     {
-      desc: "Saya sangat merekomendasikan Klinik Kecantikan LW kepada siapa pun yang mencari solusi untuk masalah kulit mereka; tim ahli, perawatan berkualitas, dan hasil yang luar biasa telah mengubah penampilan dan kepercayaan diri saya secara signifikan.",
-      author: "Maria",
+      desc: "Saya sangat senang dengan hasil yang mereka berikan pada kulit saya. Tim ahli mereka sangat profesional dan perawatan yang mereka berikan benar-benar efektif. Kulit saya terlihat lebih cerah, lebih sehat, dan lebih muda.",
+      author: "Jessica",
       occupation: "Mahasiswi",
     },
     {
-      desc: "Saya sangat merekomendasikan Klinik Kecantikan LW kepada siapa pun yang mencari solusi untuk masalah kulit mereka; tim ahli, perawatan berkualitas, dan hasil yang luar biasa telah mengubah penampilan dan kepercayaan diri saya secara signifikan.",
-      author: "Maria",
+      desc: "Mereka tidak hanya memberikan perawatan kecantikan yang luar biasa, tetapi juga menciptakan lingkungan yang nyaman dan menenangkan. Setiap kali saya mengunjungi klinik ini, saya merasa sepenuhnya diurus dan dirawat dengan baik.",
+      author: "Siti",
       occupation: "Mahasiswi",
     },
   ];
